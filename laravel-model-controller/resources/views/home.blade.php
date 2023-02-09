@@ -25,11 +25,23 @@
             </div>
 
             @forelse ($movies as $movie)
-                <div class="col-6">
+                <div class="col-4">
                     <div class="card">
                         <h1>
                             {{$movie->title}}
                         </h1>
+                        <h2>
+                            {{$movie->original_title}}
+                        </h2>
+                        <h2>
+                            {{$movie->nationality}}
+                        </h2>
+                        <h4>
+                            {{$movie->date}}
+                        </h4>
+                        <h4>
+                            {{$movie->vote}}
+                        </h4>
                     </div>
                 </div>
             @empty
