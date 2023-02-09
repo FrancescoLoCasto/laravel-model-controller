@@ -17,9 +17,26 @@
 
 <body>
 
-    <h1>
-        Main
-    </h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                I nostri films!
+            </div>
+
+            @forelse ($movies as $movie)
+                <div class="col-6">
+                    <div class="card">
+                        <h1>
+                            {{$movie->title}}
+                        </h1>
+                    </div>
+                </div>
+            @empty
+                
+            @endforelse
+        </div>
+    </div>
 
 </body>
 
