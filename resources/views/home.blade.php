@@ -17,16 +17,28 @@
 
 <body>
 
-
-    <div class="container">
+    <div class="container-fluid bg-dark">
         <div class="row">
             <div class="col-12">
-                I nostri films!
+                <div class="logo text-center p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Blockbuster_logo.svg/2560px-Blockbuster_logo.svg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid my-container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="p-3">
+                    I nostri Film!
+                </h1>
             </div>
 
             @forelse ($movies as $movie)
-                <div class="col-4">
-                    <div class="card">
+                <div class="col-4 p-4">
+                    <div class="card bg-dark text-light text-center">
                         <h1>
                             {{$movie->title}}
                         </h1>
